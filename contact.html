@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | MGM Car Care Rajapalayam</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Same CSS as index.html -->
+    <style>
+        /* Copy all CSS from index.html */
+        /* ... */
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-img">
+                    <div class="top">MGM</div>
+                    <div class="bottom">CAR</div>
+                </div>
+                <div class="logo-text">
+                    <h1>MGM CAR CARE</h1>
+                    <p>Drive with Pride</p>
+                </div>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="desktop-menu">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="services.html"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                    <li><a href="offers.html"><i class="fas fa-tags"></i> Special Offers</a></li>
+                    <li><a href="contact.html" class="active"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <nav class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="services.html"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                <li><a href="offers.html"><i class="fas fa-tags"></i> Special Offers</a></li>
+                <li><a href="contact.html" class="active"><i class="fas fa-phone-alt"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Content -->
+    <section class="page-content">
+        <div class="container">
+            <h1>Contact MGM Car Care</h1>
+            <p>Get in touch with us for premium car care services in Rajapalayam. We're here to answer your questions and schedule your appointment.</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Our Contact Information</h3>
+                    <p>Feel free to reach out to us through any of the following channels:</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Our Location</h4>
+                                <p>501-1, Opp. to Janakiram Mills,<br>
+                                Near Sundar Tyre, Madurai Road,<br>
+                                Rajapalayam - 626 117.<br>
+                                Tamil Nadu, India</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Phone Numbers</h4>
+                                <p><strong>Primary:</strong> <a href="tel:8111008061">81110 08061</a></p>
+                                <p><strong>Secondary:</strong> <a href="tel:8111008062">81110 08062</a></p>
+                                <p><strong>Tertiary:</strong> <a href="tel:8111008063">81110 08063</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email Address</h4>
+                                <p><a href="mailto:mgmcarcarerjpm@gmail.com">mgmcarcarerjpm@gmail.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p><strong>Monday - Saturday:</strong> 8:00 AM - 8:00 PM</p>
+                                <p><strong>Sunday:</strong> 9:00 AM - 6:00 PM</p>
+                                <p><em>We shine on Sundays too!</em></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-icons" style="margin-top: 2rem;">
+                        <p><strong>Follow us on social media:</strong></p>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/918111008061" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                    
+                    <form id="contactForm">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <div>
+                                <label for="name">Your Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div>
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        
+                        <div>
+                            <label for="vehicle">Vehicle Type *</label>
+                            <select id="vehicle" name="vehicle" required>
+                                <option value="">Select Vehicle Type</option>
+                                <option value="hatchback">Hatchback</option>
+                                <option value="sedan">Sedan</option>
+                                <option value="suv">SUV</option>
+                                <option value="muv">MUV</option>
+                                <option value="luxury">Luxury Car</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="service">Service Interested In *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select Service</option>
+                                <option value="car_wash">Car Wash (RO Water)</option>
+                                <option value="teflon">Teflon Coating</option>
+                                <option value="ceramic">Ceramic Coating</option>
+                                <option value="graphene">Graphene Coating</option>
+                                <option value="ozone">Ozone Therapy</option>
+                                <option value="ac_service">AC Service</option>
+                                <option value="complete">Complete Package</option>
+                                <option value="other">Other Service</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" placeholder="Please provide any additional details or specific requirements..." required></textarea>
+                        </div>
+                        
+                        <div>
+                            <label for="preferred_date">Preferred Date</label>
+                            <input type="date" id="preferred_date" name="preferred_date">
+                        </div>
+                        
+                        <div>
+                            <label for="preferred_time">Preferred Time</label>
+                            <select id="preferred_time" name="preferred_time">
+                                <option value="">Select Time Slot</option>
+                                <option value="morning">Morning (8 AM - 12 PM)</option>
+                                <option value="afternoon">Afternoon (12 PM - 4 PM)</option>
+                                <option value="evening">Evening (4 PM - 8 PM)</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="map-container">
+                <h3 style="margin-bottom: 1.5rem;">Find Us on Map</h3>
+                <div style="width: 100%; height: 400px; background-color: #f0f0f0; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 1rem;">
+                    <i class="fas fa-map-marked-alt" style="font-size: 3rem; color: var(--accent);"></i>
+                    <p>Location Map: 501-1 Opp to Janakiram Mills, Near Sundar Tyre, Madurai Road, Rajapalayam</p>
+                    <a href="https://maps.google.com/?q=501-1+Opp+to+Janakiram+Mills,+Near+Sundar+Tyre,+Madurai+Road,+Rajapalayam" class="cta-button" target="_blank">Open in Google Maps</a>
+                </div>
+            </div>
+            
+            <div class="highlight-box" style="margin-top: 3rem;">
+                <h4><i class="fas fa-info-circle"></i> Important Information</h4>
+                <ul>
+                    <li>Walk-ins are welcome, but appointments are recommended to avoid waiting</li>
+                    <li>Please bring your vehicle registration documents for verification</li>
+                    <li>Free pick-up and drop-off available within 5km radius (conditions apply)</li>
+                    <li>Estimated service time: 2-6 hours depending on the service selected</li>
+                    <li>Payment can be made via cash, UPI, or card</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <h3>MGM CAR CARE</h3>
+                    <p>Drive with Pride. Professional car care and detailing services in Rajapalayam.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/918111008061" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="offers.html">Special Offers</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="cancellation.html">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 501-1 Opp to Janakiram Mills, Near Sundar Tyre, Madurai Road, Rajapalayam - 626 117.</p>
+                    <p><i class="fas fa-phone"></i> 81110 08061 | 81110 08062 | 81110 08063</p>
+                    <p><i class="fas fa-envelope"></i> mgmcarcarerjpm@gmail.com</p>
+                    <p><i class="fas fa-certificate"></i> UDYAM: UDYAM-TN-32-0092128</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 MGM Car Care. All Rights Reserved. | UDYAM REGISTRATION NUMBER: UDYAM-TN-32-0092128</p>
+                <p style="margin-top: 10px;">Designed with ❤️ for the people of Rajapalayam</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+                
+                const icon = mobileMenuBtn.querySelector('i');
+                if (icon.classList.contains('fa-bars')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+            
+            const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.remove('active');
+                    const icon = mobileMenuBtn.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                });
+            });
+            
+            // Contact form handling
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form data
+                    const formData = new FormData(contactForm);
+                    const data = Object.fromEntries(formData);
+                    
+                    // Simple validation
+                    if (!data.name || !data.phone || !data.message) {
+                        alert('Please fill in all required fields (Name, Phone, and Message).');
+                        return;
+                    }
+                    
+                    // Create WhatsApp message
+                    const phoneNumber = '918111008061'; // Your WhatsApp number
+                    const message = `New Service Inquiry from Website:
+                    
+Name: ${data.name}
+Phone: ${data.phone}
+Email: ${data.email || 'Not provided'}
+Vehicle: ${data.vehicle}
+Service: ${data.service}
+Preferred Date: ${data.preferred_date || 'Not specified'}
+Preferred Time: ${data.preferred_time || 'Not specified'}
+
+Message: ${data.message}
+
+Please contact this customer as soon as possible.`;
+                    
+                    // Encode message for URL
+                    const encodedMessage = encodeURIComponent(message);
+                    
+                    // Create WhatsApp URL
+                    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+                    
+                    // Open WhatsApp in new tab
+                    window.open(whatsappURL, '_blank');
+                    
+                    // Show success message
+                    alert('Thank you for your inquiry! We are opening WhatsApp so you can send us your request directly. If WhatsApp doesn\'t open, please message us at 81110 08061.');
+                    
+                    // Reset form
+                    contactForm.reset();
+                });
+            }
+            
+            // Set min date for appointment to today
+            const dateInput = document.getElementById('preferred_date');
+            if (dateInput) {
+                const today = new Date();
+                const yyyy = today.getFullYear();
+                const mm = String(today.getMonth() + 1).padStart(2, '0');
+                const dd = String(today.getDate()).padStart(2, '0');
+                const minDate = `${yyyy}-${mm}-${dd}`;
+                dateInput.min = minDate;
+            }
+        });
+    </script>
+</body>
+</html>
