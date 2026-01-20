@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Offers | MGM Car Care Rajapalayam</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Same CSS as index.html -->
+    <style>
+        /* Copy all CSS from index.html */
+        /* ... */
+        
+        /* Additional styles for offers page */
+        .offer-details {
+            margin: 3rem 0;
+        }
+        
+        .offer-card-large {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            border-radius: 15px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .offer-card-large:before {
+            content: "HOT DEAL";
+            position: absolute;
+            top: 20px;
+            right: -30px;
+            background-color: var(--secondary);
+            color: white;
+            padding: 10px 40px;
+            transform: rotate(45deg);
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        
+        .offer-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .offer-title {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .offer-price-container {
+            text-align: right;
+        }
+        
+        .current-price {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+        
+        .original-price {
+            font-size: 1.8rem;
+            text-decoration: line-through;
+            opacity: 0.8;
+        }
+        
+        .discount-badge {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .offer-features {
+            margin: 2rem 0;
+        }
+        
+        .offer-features ul {
+            columns: 2;
+            list-style-type: none;
+        }
+        
+        .offer-features li {
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .offer-features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .validity {
+            font-style: italic;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .terms-conditions {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            .offer-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .offer-price-container {
+                text-align: center;
+                margin-top: 1rem;
+            }
+            
+            .offer-features ul {
+                columns: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-img">
+                    <div class="top">MGM</div>
+                    <div class="bottom">CAR</div>
+                </div>
+                <div class="logo-text">
+                    <h1>MGM CAR CARE</h1>
+                    <p>Drive with Pride</p>
+                </div>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="desktop-menu">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="services.html"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                    <li><a href="offers.html" class="active"><i class="fas fa-tags"></i> Special Offers</a></li>
+                    <li><a href="contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <nav class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="services.html"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                <li><a href="offers.html" class="active"><i class="fas fa-tags"></i> Special Offers</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Content -->
+    <section class="page-content">
+        <div class="container">
+            <h1>Special Offers & Discounts</h1>
+            <p>Take advantage of these limited-time offers to give your car the premium care it deserves at unbeatable prices!</p>
+            
+            <div class="highlight-box">
+                <p><strong>Note:</strong> All offers are valid for a limited time only. Book your appointment today to avail these exclusive discounts!</p>
+            </div>
+            
+            <div class="offer-details">
+                <!-- Offer 1 -->
+                <div class="offer-card-large">
+                    <div class="discount-badge">50% OFF</div>
+                    
+                    <div class="offer-header">
+                        <div>
+                            <h2 class="offer-title">Ozone Therapy Treatment</h2>
+                            <p>Complete interior sanitization and odor elimination</p>
+                        </div>
+                        <div class="offer-price-container">
+                            <div class="current-price">₹600/-</div>
+                            <div class="original-price">₹1200/-</div>
+                        </div>
+                    </div>
+                    
+                    <div class="offer-features">
+                        <ul>
+                            <li>Eliminates 99.9% bacteria and viruses</li>
+                            <li>Removes stubborn odors permanently</li>
+                            <li>Safe for all interior surfaces</li>
+                            <li>Improves cabin air quality</li>
+                            <li>Protects against mold and mildew</li>
+                            <li>30-minute treatment process</li>
+                        </ul>
+                    </div>
+                    
+                    <p class="validity"><i class="fas fa-clock"></i> Valid until: 31st December 2025</p>
+                </div>
+                
+                <!-- Offer 2 -->
+                <div class="offer-card-large" style="background: linear-gradient(135deg, #2c3e50, #4a6491);">
+                    <div class="discount-badge">20% OFF</div>
+                    
+                    <div class="offer-header">
+                        <div>
+                            <h2 class="offer-title">Teflon Coating Package</h2>
+                            <p>Premium paint protection for your vehicle</p>
+                        </div>
+                        <div class="offer-price-container">
+                            <div class="current-price">From ₹3999/-</div>
+                            <div class="original-price">₹5000/-</div>
+                        </div>
+                    </div>
+                    
+                    <div class="offer-features">
+                        <ul>
+                            <li>Small Vehicles: ₹3999/- (Original ₹5000/-)</li>
+                            <li>Medium Vehicles: ₹4499/- (Original ₹6000/-)</li>
+                            <li>Large Vehicles: ₹4999/- (Original ₹7000/-)</li>
+                            <li>12-month protection guarantee</li>
+                            <li>Enhanced shine and gloss</li>
+                            <li>Protection against UV rays</li>
+                        </ul>
+                    </div>
+                    
+                    <p class="validity"><i class="fas fa-clock"></i> Limited slots available</p>
+                </div>
+                
+                <!-- Offer 3 -->
+                <div class="offer-card-large" style="background: linear-gradient(135deg, #2a9d8f, #264653);">
+                    <div class="discount-badge">COMPLETE PACKAGE</div>
+                    
+                    <div class="offer-header">
+                        <div>
+                            <h2 class="offer-title">Complete Car Care Package</h2>
+                            <p>Everything your car needs in one package</p>
+                        </div>
+                        <div class="offer-price-container">
+                            <div class="current-price">₹4499/-</div>
+                            <div class="original-price">₹6000/-</div>
+                        </div>
+                    </div>
+                    
+                    <div class="offer-features">
+                        <ul>
+                            <li>RO Water Car Wash</li>
+                            <li>Interior Vacuum Cleaning</li>
+                            <li>Dashboard Polish</li>
+                            <li>Tyre and Alloy Wheel Polish</li>
+                            <li>Engine Room Cleaning</li>
+                            <li>Air Freshener</li>
+                            <li>Manual Wax Polish</li>
+                            <li>Free Basic Inspection</li>
+                        </ul>
+                    </div>
+                    
+                    <p class="validity"><i class="fas fa-clock"></i> For medium to large vehicles</p>
+                </div>
+            </div>
+            
+            <div class="offers-container">
+                <div class="offer-card">
+                    <div class="offer-badge">NEW CUSTOMER</div>
+                    <h3>First Time Customer Offer</h3>
+                    <div class="offer-price">15% OFF</div>
+                    <p>Get 15% off on your first service with us. Valid for all services above ₹1000/-</p>
+                </div>
+                
+                <div class="offer-card">
+                    <div class="offer-badge">LOYALTY</div>
+                    <h3>Referral Bonus</h3>
+                    <div class="offer-price">₹500 OFF</div>
+                    <p>Refer a friend and get ₹500 off on your next service when they book with us</p>
+                </div>
+                
+                <div class="offer-card">
+                    <div class="offer-badge">COMBO</div>
+                    <h3>AC Service Combo</h3>
+                    <div class="offer-price">₹1499/-</div>
+                    <p>AC Gas Top-Up + AC Vent Cleaning (Regular Price: ₹2000/-)</p>
+                </div>
+            </div>
+            
+            <div class="terms-conditions">
+                <h2>Terms & Conditions</h2>
+                <ul>
+                    <li>All offers are valid for a limited period only</li>
+                    <li>Offers cannot be combined with any other discounts</li>
+                    <li>Prices are inclusive of all taxes</li>
+                    <li>Advance booking is recommended to avail offers</li>
+                    <li>Offers are applicable only at our Rajapalayam center</li>
+                    <li>Management reserves the right to modify or cancel offers without prior notice</li>
+                    <li>Vehicle inspection may be required before service</li>
+                </ul>
+                
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="contact.html" class="cta-button">Book Now to Avail Offers</a>
+                </div>
+            </div>
+            
+            <div class="highlight-box">
+                <p><strong>Weekend Special:</strong> We're open on Sundays! Bring your car on weekends and get a complimentary interior fragrance refresh with any service above ₹2000/-.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <h3>MGM CAR CARE</h3>
+                    <p>Drive with Pride. Professional car care and detailing services in Rajapalayam.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/918111008061" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="offers.html">Special Offers</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="cancellation.html">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 501-1 Opp to Janakiram Mills, Near Sundar Tyre, Madurai Road, Rajapalayam - 626 117.</p>
+                    <p><i class="fas fa-phone"></i> 81110 08061 | 81110 08062 | 81110 08063</p>
+                    <p><i class="fas fa-envelope"></i> mgmcarcarerjpm@gmail.com</p>
+                    <p><i class="fas fa-certificate"></i> UDYAM: UDYAM-TN-32-0092128</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 MGM Car Care. All Rights Reserved. | UDYAM REGISTRATION NUMBER: UDYAM-TN-32-0092128</p>
+                <p style="margin-top: 10px;">Designed with ❤️ for the people of Rajapalayam</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+                
+                const icon = mobileMenuBtn.querySelector('i');
+                if (icon.classList.contains('fa-bars')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+            
+            const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.remove('active');
+                    const icon = mobileMenuBtn.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
